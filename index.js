@@ -37,7 +37,7 @@ function fibonacci(){
     console.log(fNum);
     
     const fibArr=[0,1]
-    for(var i=2; i<=fNum;i++){
+    for(var i=2; i<fNum;i++){
         fibArr.push(fibArr[i-2]+fibArr[i-1])
     }
     document.getElementById("resultfibo").innerHTML = fibArr;  

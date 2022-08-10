@@ -6,9 +6,9 @@ function submit(){
     password=document.getElementById('password').value;
     console.log(userName);
     console.log(password);
-    if (user===userName){
+    if (user===userName && password===pass){
         
-        window.location.replace("http://127.0.0.1:5500/login_and_%20fibonacci/cal.html");
+        window.location.assign("http://127.0.0.1:5500/login_and_fibonacci/login-whit-Feibo/cal.html");
         alert("login successfully")
         console.log("login successfully");
     }

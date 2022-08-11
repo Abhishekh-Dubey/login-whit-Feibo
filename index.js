@@ -18,29 +18,27 @@ function submit(){
     }
 }
 
-
+const fibArr=[0,1]
 function myFunction(){
     fNum=parseInt(document.getElementById('fNum').value);
     sNum=parseInt(document.getElementById('sNum').value);
+    
     console.log(fNum);
     console.log(sNum);
-    result=fNum+sNum
+    
     document.getElementById("demo1").innerHTML = fNum;  
     document.getElementById("demo2").innerHTML = sNum;  
     
-    document.getElementById("result").innerHTML = result;  
-
-}
-
-function fibonacci(){
-    fNum=parseInt(document.getElementById('fibo').value);
+    f1Num=10;
     console.log(fNum);
     
-    const fibArr=[0,1]
-    for(var i=2; i<fNum;i++){
+    
+    for(var i=2; i<f1Num;i++){
         fibArr.push(fibArr[i-2]+fibArr[i-1])
     }
     document.getElementById("resultfibo").innerHTML = fibArr;  
 
     console.log(fibArr);
+
 }
+

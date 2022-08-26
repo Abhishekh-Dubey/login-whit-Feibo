@@ -68,14 +68,14 @@ function submit(){
         }
     // }
 }
-
+const fibArr1=[0,1]
 const fibArr=[0,1]
 function myFunction(){
     
     fNum=parseInt(document.getElementById('fNum').value);
     sNum=parseInt(document.getElementById('sNum').value);
-    fibArr[0]=fNum
-    fibArr[1]=sNum
+    fibArr1[0]=fNum
+    fibArr1[1]=sNum
     console.log(fNum);
     console.log(sNum);
     
@@ -86,13 +86,17 @@ function myFunction(){
     // console.log(fNum);
     
     for(var i=2; i<10;i++){
-        fibArr.push(fibArr[i-2]+fibArr[i-1])
+        fibArr1.push(fibArr1[i-2]+fibArr1[i-1])
     }
     
-document.getElementById("resultfibo1").innerHTML = fibArr;
-//     for(var i=2; i<fNum*11;i++){
-//         fibArr.push(fibArr[i-2]+fibArr[i-1])
+    document.getElementById("resultfibo").innerHTML = fibArr1;
+/////////////////////////////////////////////
+
+
+//     for(var l=2; l<fNum*11;l++){
+//         fibArr.push(fibArr[l-2]+fibArr[l-1])
 //     }
+
 //     h=[]
 //     finalArr1=[]
 //     for(var j= 0; j<fibArr.length; j++){
@@ -121,8 +125,8 @@ document.getElementById("resultfibo1").innerHTML = fibArr;
 
 
 
-    // document.getElementById("resultfibo1").innerHTML = finalArr1;  
-    // document.getElementById("resultfibo2").innerHTML = finalArr2;  
+//     document.getElementById("resultfibo1").innerHTML = finalArr1;  
+//     document.getElementById("resultfibo2").innerHTML = finalArr2;  
     
 
 }

@@ -14,11 +14,13 @@ function submitReg(){
     re_pass=document.getElementById('Reg_re_pass').value;
     email=document.getElementById('Reg_email').value;
     if (password==re_pass){
-        
+        // reg.firstName=firstName
+        // reg.lastName=lastName
         reg.userName=userName
         reg.password=password
         reg.re_pass=re_pass
         reg.email=email
+        alert("Successfull SignUP")
     }
     else{
         alert("passwaord dosn't match")
@@ -72,7 +74,8 @@ function myFunction(){
     
     fNum=parseInt(document.getElementById('fNum').value);
     sNum=parseInt(document.getElementById('sNum').value);
-    
+    fibArr[0]=fNum
+    fibArr[1]=sNum
     console.log(fNum);
     console.log(sNum);
     
@@ -82,41 +85,44 @@ function myFunction(){
     // f1Num=10;
     // console.log(fNum);
     
-    
-    for(var i=2; i<fNum*11;i++){
+    for(var i=2; i<10;i++){
         fibArr.push(fibArr[i-2]+fibArr[i-1])
     }
-    h=[]
-    finalArr1=[]
-    for(var j= 0; j<fibArr.length; j++){
-            if(fNum<fibArr[j]){
-                h.push(fibArr[j])
+    
+document.getElementById("resultfibo1").innerHTML = fibArr;
+//     for(var i=2; i<fNum*11;i++){
+//         fibArr.push(fibArr[i-2]+fibArr[i-1])
+//     }
+//     h=[]
+//     finalArr1=[]
+//     for(var j= 0; j<fibArr.length; j++){
+//             if(fNum<fibArr[j]){
+//                 h.push(fibArr[j])
                 
-            }
-    }
-    for(var i= 0; i<10;i++){
-        finalArr1.push(h[i]);
-    }
-    console.log(finalArr1);
-//////////////////////////////////////////
-    h2=[]
-    finalArr2=[]
-    for(var j= 0; j<fibArr.length; j++){
-            if(sNum<fibArr[j]){
-                h2.push(fibArr[j])
+//             }
+//     }
+//     for(var i= 0; i<10;i++){
+//         finalArr1.push(h[i]);
+//     }
+//     console.log(finalArr1);
+// //////////////////////////////////////////
+//     h2=[]
+//     finalArr2=[]
+//     for(var j= 0; j<fibArr.length; j++){
+//             if(sNum<fibArr[j]){
+//                 h2.push(fibArr[j])
                 
-            }
-    }
-    for(var i= 0; i<10;i++){
-        finalArr2.push(h2[i]);
-    }
-    console.log(finalArr2);
+//             }
+//     }
+//     for(var i= 0; i<10;i++){
+//         finalArr2.push(h2[i]);
+//     }
+//     console.log(finalArr2);
 
 
 
-
-    document.getElementById("resultfibo1").innerHTML = finalArr1;  
-    document.getElementById("resultfibo2").innerHTML = finalArr2;  
+    // document.getElementById("resultfibo1").innerHTML = finalArr1;  
+    // document.getElementById("resultfibo2").innerHTML = finalArr2;  
     
 
 }

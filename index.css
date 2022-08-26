@@ -60,4 +60,8 @@ padding-left: 10px;
     background: #07f1e652;
     margin: 6px;
     border: 4px solid black;
+    font-size: 21px;
+}
+.text_size{
+    font-size: 21px;;
 }
